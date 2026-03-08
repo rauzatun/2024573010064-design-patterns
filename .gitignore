@@ -1,0 +1,19 @@
+# Default ignored files
+/shelf/
+/.idea/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Compiled class file
+*.class
+
+# Log files
+*.log
+
+# IntelliJ
+.idea/
+out/
+
+# Package files
+*.jar
+*.war
+*.zip
