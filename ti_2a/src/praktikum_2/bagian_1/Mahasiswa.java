@@ -3,7 +3,7 @@ package praktikum_2.bagian_1;
  class Mahasiswa {
     // atribut
     String nama;
-    int umur;
+    String umur;
 
     // metode
     void displayInfo() {

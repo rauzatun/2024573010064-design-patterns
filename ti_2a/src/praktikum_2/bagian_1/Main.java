@@ -5,9 +5,10 @@ public class Main {
         // membuat objek
         Mahasiswa mhs1 = new Mahasiswa();
         mhs1.nama = "oja";
-        mhs1.umur = "19";
+        mhs1 .umur = "19";
 
        // memanggil method
         mhs1.displayInfo();
+
     }
 }
