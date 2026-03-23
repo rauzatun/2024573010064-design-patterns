@@ -3,7 +3,7 @@ package praktikum_2.bagian_2;
  class Mahasiswa {
     // atribut private
     private String nama;
-    private int umur;
+    private String umur;
 
     // getter dan setter
     public String getnama() {
@@ -12,10 +12,10 @@ package praktikum_2.bagian_2;
     public void setnama(String nama) {
         this.nama = nama;
     }
-    public int getumur() {
+    public String getumur() {
         return umur;
     }
-    public void setumur(int umur) {
+    public void setumur(String umur) {
         this.umur = umur;
     }
 }
