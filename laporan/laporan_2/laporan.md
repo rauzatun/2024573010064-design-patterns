@@ -30,7 +30,8 @@ Class merupakan blueprint atau cetakan untuk membuat object. Sedangkan object ad
 * Menampilkan data object
 
 ### Screenshoot Hasil
-
+![img.png](img.png)
+![img_1.png](img_1.png)
 (Tambahkan screenshot output program di sini)
 
 ### Analisa dan Pembahasan
@@ -53,7 +54,7 @@ Encapsulation adalah teknik menyembunyikan data dengan menggunakan access modifi
 * Membuat latihan class Motor
 
 ### Screenshoot Hasil
-
+![img_2.png](img_2.png)
 (Tambahkan screenshot hasil output program di sini)
 
 ### Analisa dan Pembahasan
@@ -76,7 +77,7 @@ Inheritance adalah pewarisan sifat dari class induk ke class anak (is-a). Sedang
 * Membuat latihan Laptop dengan Processor dan RAM
 
 ### Screenshoot Hasil
-
+![img_3.png](img_3.png)
 (Tambahkan screenshot hasil output di sini)
 
 ### Analisa dan Pembahasan
@@ -99,7 +100,10 @@ Polymorphism adalah kemampuan object untuk memiliki banyak bentuk, yang dapat di
 * Latihan BangunDatar dan Matematika
 
 ### Screenshoot Hasil
-
+![img_4.png](img_4.png)
+![img_5.png](img_5.png)
+![img_6.png](img_6.png)
+![img_7.png](img_7.png)
 (Tambahkan screenshot hasil program di sini)
 
 ### Analisa dan Pembahasan
@@ -123,7 +127,7 @@ Abstraction adalah proses menyembunyikan detail implementasi dan hanya menampilk
 * Latihan HewanAir dan Ikan
 
 ### Screenshoot Hasil
-
+![img_8.png](img_8.png)
 (Tambahkan screenshot hasil program di sini)
 
 ### Analisa dan Pembahasan
@@ -147,6 +151,7 @@ Aplikasi ini menggabungkan semua konsep OOP seperti encapsulation, inheritance, 
 * Membuat aplikasi utama KonferensiApp
 
 ### Screenshoot Hasil
+![img_9.png](img_9.png)
 
 (Tambahkan screenshot hasil output program di sini)
 
