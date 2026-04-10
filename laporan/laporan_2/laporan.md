@@ -1,4 +1,5 @@
-#  Laporan Lab 01: Review Dasar Pemrograman Java
+
+# **Laporan Lab 02: Review Konsep Dasar OOP Menggunakan Java**
 
 **Mata Kuliah:** Praktikum Design Pattern
 **Nama:** Rauzatun Jannah
@@ -7,177 +8,170 @@
 
 ---
 
-# 1. Abstrak
+# **1. Abstrak**
 
-Pada praktikum ini dilakukan pembelajaran mengenai dasar-dasar pemrograman berorientasi objek (Object-Oriented Programming/OOP) menggunakan Java. Materi yang dipelajari meliputi konsep Class dan Object, Encapsulation, Inheritance, Composition, Polymorphism, serta Abstraction. Praktikum ini bertujuan agar mahasiswa mampu memahami konsep OOP dan mengimplementasikannya dalam program sederhana. Dengan adanya praktikum ini, diharapkan mahasiswa dapat membangun program yang lebih terstruktur, modular, dan mudah dikembangkan.
-
----
-
-# 2. Praktikum
-
-##  Praktikum 1 – Class & Object
-
-### Dasar Teori
-
-Class merupakan blueprint atau cetakan untuk membuat object. Sedangkan object adalah instance dari class yang memiliki atribut dan method.
-
-### Langkah Praktikum
-
-* Membuat package `bagian_1`
-* Membuat class Mahasiswa
-* Membuat class Main untuk menjalankan program
-* Membuat latihan class Buku
-* Menampilkan data object
-
-### Screenshoot Hasil
-![img.png](img.png)
-![img_1.png](img_1.png)
-(Tambahkan screenshot output program di sini)
-
-### Analisa dan Pembahasan
-
-Pada praktikum ini, class digunakan sebagai template untuk membuat object. Object dari class Buku berhasil dibuat dan dapat menampilkan atribut seperti judul, penulis, dan tahun terbit. Hal ini menunjukkan bahwa konsep dasar OOP sudah berjalan dengan baik.
+Pada praktikum ini dilakukan pembelajaran mengenai konsep dasar *Object Oriented Programming* (OOP) menggunakan bahasa Java. Materi yang dipelajari meliputi class, object, attribute, method, akses modifier, setter dan getter, serta constructor. Selain itu, pada akhir praktikum dibuat sebuah program sederhana berupa sistem manajemen perpustakaan untuk mengimplementasikan seluruh konsep tersebut. Dengan praktikum ini, mahasiswa diharapkan mampu memahami dan menerapkan konsep OOP dalam pengembangan program Java.
 
 ---
 
-##  Praktikum 2 – Encapsulation
-
-### Dasar Teori
-
-Encapsulation adalah teknik menyembunyikan data dengan menggunakan access modifier seperti private, serta menyediakan akses melalui method getter dan setter.
-
-### Langkah Praktikum
-
-* Membuat package `bagian_2`
-* Membuat class Mahasiswa dengan atribut private
-* Membuat getter dan setter
-* Membuat latihan class Motor
-
-### Screenshoot Hasil
-![img_2.png](img_2.png)
-(Tambahkan screenshot hasil output program di sini)
-
-### Analisa dan Pembahasan
-
-Encapsulation meningkatkan keamanan data karena atribut tidak dapat diakses langsung dari luar class. Penggunaan getter dan setter memberikan kontrol terhadap data yang dimasukkan.
+# **2. Praktikum**
 
 ---
 
-##  Praktikum 3 – Inheritance & Composition
+## **Praktikum 1 – Class dan Object**
 
-### Dasar Teori
+### **Dasar Teori**
 
-Inheritance adalah pewarisan sifat dari class induk ke class anak (is-a). Sedangkan composition adalah hubungan kepemilikan antar class (has-a).
+Class merupakan blueprint atau cetakan untuk membuat objek. Sedangkan object adalah instance dari class yang memiliki atribut (state) dan method (behavior).
 
-### Langkah Praktikum
+### **Langkah Praktikum**
 
-* Membuat package `bagian_3`
-* Membuat class Kendaraan dan Mobil (inheritance)
-* Membuat class Mesin dan Mobil (composition)
-* Membuat latihan Laptop dengan Processor dan RAM
+1. Membuat package `modul_2.bagian_1`.
+2. Membuat class `Mahasiswa`.
+3. Membuat class `Main` untuk menjalankan program.
+4. Membuat object dari class dan menampilkan data.
 
-### Screenshoot Hasil
-![img_3.png](img_3.png)
-(Tambahkan screenshot hasil output di sini)
+### **Screenshoot Hasil**
+![bagian1.png](gambar/bagian1.png)
+*(Tambahkan gambar output di sini)*
 
-### Analisa dan Pembahasan
+### **Analisa dan Pembahasan**
 
-Inheritance mempermudah penggunaan kembali kode, sedangkan composition memberikan fleksibilitas dalam membangun object kompleks. Pada latihan, Laptop berhasil menggunakan Processor dan RAM sebagai komponennya.
-
----
-
-##  Praktikum 4 – Polymorphism
-
-### Dasar Teori
-
-Polymorphism adalah kemampuan object untuk memiliki banyak bentuk, yang dapat dilakukan dengan method overriding dan overloading.
-
-### Langkah Praktikum
-
-* Membuat package `bagian_4`
-* Implementasi overriding (Hewan, Kucing, Anjing)
-* Implementasi overloading (Kalkulator)
-* Latihan BangunDatar dan Matematika
-
-### Screenshoot Hasil
-![img_4.png](img_4.png)
-![img_5.png](img_5.png)
-![img_6.png](img_6.png)
-![img_7.png](img_7.png)
-(Tambahkan screenshot hasil program di sini)
-
-### Analisa dan Pembahasan
-
-Overriding memungkinkan perubahan perilaku method pada subclass, sedangkan overloading memberikan fleksibilitas dalam penggunaan method. Kedua konsep ini membuat program lebih dinamis.
+Pada praktikum ini dipelajari bahwa object dibuat dari class. Class berfungsi sebagai template, sedangkan object merupakan implementasinya. Dengan membuat object, kita dapat mengakses atribut dan method yang ada di dalam class.
 
 ---
 
-##  Praktikum 5 – Abstraction
+## **Praktikum 2 – Attribute dan Method**
 
-### Dasar Teori
+### **Dasar Teori**
 
-Abstraction adalah proses menyembunyikan detail implementasi dan hanya menampilkan fungsi penting. Dapat menggunakan abstract class dan interface.
+Attribute adalah variabel dalam class, sedangkan method adalah fungsi yang mendefinisikan perilaku object.
 
-### Langkah Praktikum
+### **Langkah Praktikum**
 
-* Membuat package `bagian_5`
-* Membuat abstract class Hewan
-* Membuat interface Bergerak
-* Membuat class turunan dan implementasi
-* Latihan HewanAir dan Ikan
+1. Membuat package `modul_2.bagian_2`.
+2. Membuat class `Kalkulator`.
+3. Menambahkan method seperti penjumlahan.
+4. Menjalankan program melalui class `Main`.
 
-### Screenshoot Hasil
-![img_8.png](img_8.png)
-(Tambahkan screenshot hasil program di sini)
+### **Screenshoot Hasil**
+![bagian2.png](gambar/bagian2.png)
+*(Tambahkan gambar output di sini)*
 
-### Analisa dan Pembahasan
+### **Analisa dan Pembahasan**
 
-Abstraction membantu menyederhanakan kompleksitas program. Dengan abstract class dan interface, program menjadi lebih terstruktur dan mudah dikembangkan.
-
----
-
-##  Praktikum 6 – Aplikasi Tiket
-
-### Dasar Teori
-
-Aplikasi ini menggabungkan semua konsep OOP seperti encapsulation, inheritance, polymorphism, dan abstraction dalam satu program.
-
-### Langkah Praktikum
-
-* Membuat package `bagian_6`
-* Membuat class Tiket (abstract)
-* Membuat subclass TiketReguler dan TiketVIP
-* Membuat class Pesanan
-* Membuat aplikasi utama KonferensiApp
-
-### Screenshoot Hasil
-![img_9.png](img_9.png)
-
-(Tambahkan screenshot hasil output program di sini)
-
-### Analisa dan Pembahasan
-
-Aplikasi ini menunjukkan implementasi nyata OOP dalam program. Setiap konsep digunakan untuk membangun sistem yang modular dan fleksibel.
+Attribute digunakan untuk menyimpan data, sedangkan method digunakan untuk mengolah data tersebut. Pada praktikum ini, method digunakan untuk melakukan operasi perhitungan.
 
 ---
 
-# 3. Kesimpulan
+## **Praktikum 3 – Akses Modifier**
 
-Dari praktikum ini dapat disimpulkan bahwa:
+### **Dasar Teori**
 
-* OOP sangat penting dalam pengembangan software
-* Class dan Object adalah dasar dari OOP
-* Encapsulation melindungi data
-* Inheritance dan Composition meningkatkan reuse code
-* Polymorphism membuat program fleksibel
-* Abstraction menyederhanakan kompleksitas
+Akses modifier digunakan untuk mengatur hak akses terhadap atribut atau method dalam class. Contohnya: `public`, `private`, `protected`, dan `default`.
 
-Dengan memahami konsep ini, mahasiswa dapat membuat program yang lebih baik dan terstruktur.
+### **Langkah Praktikum**
+
+1. Membuat package `modul_2.bagian_3`.
+2. Membuat class `AksesModifier`.
+3. Menguji akses terhadap atribut dari class lain.
+
+### **Screenshoot Hasil**
+![bagian3.png](gambar/bagian3.png)
+*(Tambahkan gambar output di sini)*
+
+### **Analisa dan Pembahasan**
+
+Atribut dengan modifier `private` tidak dapat diakses langsung dari luar class. Hal ini bertujuan untuk menjaga keamanan data (*encapsulation*).
 
 ---
 
-# 5. Referensi
+## **Praktikum 4 – Setter dan Getter**
 
-* Modul Praktikum Design Pattern – Politeknik Negeri Lhokseumawe
-* Dokumentasi Java Oracle
-* Buku Pemrograman Berorientasi Objek (OOP)
+### **Dasar Teori**
+
+Setter dan getter digunakan untuk mengakses dan mengubah nilai atribut yang bersifat private.
+
+### **Langkah Praktikum**
+
+1. Membuat package `modul_2.bagian_4`.
+2. Membuat class `Mobil`.
+3. Menambahkan method setter dan getter.
+4. Mengakses atribut melalui method tersebut.
+
+### **Screenshoot Hasil**
+![bagian4.png](gambar/bagian4.png)
+*(Tambahkan gambar output di sini)*
+
+### **Analisa dan Pembahasan**
+
+Setter digunakan untuk memberi nilai, sedangkan getter untuk mengambil nilai. Ini merupakan implementasi dari konsep encapsulation dalam OOP.
+
+---
+
+## **Praktikum 5 – Constructor**
+
+### **Dasar Teori**
+
+Constructor adalah method khusus yang dipanggil saat object dibuat. Constructor dapat berupa default, parameterized, dan overloading.
+
+### **Langkah Praktikum**
+
+1. Membuat package `modul_2.bagian_5`.
+2. Membuat class `Person`.
+3. Menggunakan beberapa constructor.
+4. Menjalankan program.
+
+### **Screenshoot Hasil**
+![bagian5.png](gambar/bagian5.png)
+*(Tambahkan gambar output di sini)*
+
+### **Analisa dan Pembahasan**
+
+Constructor mempermudah inisialisasi object. Dengan constructor overloading, object dapat dibuat dengan berbagai cara sesuai kebutuhan.
+
+---
+
+## **Praktikum 6 – Sistem Manajemen Perpustakaan**
+
+### **Dasar Teori**
+
+Program ini menggabungkan semua konsep OOP seperti class, object, attribute, method, encapsulation, dan constructor dalam satu aplikasi sederhana.
+
+### **Langkah Praktikum**
+
+1. Membuat package `modul_2.bagian_6`.
+2. Membuat class:
+
+    * `Buku`
+    * `Perpustakaan`
+    * `Main`
+3. Mengimplementasikan fitur:
+
+    * Tambah buku
+    * Tampilkan buku
+    * Cari buku
+
+### **Screenshoot Hasil**
+![bagian6.png](gambar/bagian6.png)
+*(Tambahkan gambar output di sini)*
+
+### **Analisa dan Pembahasan**
+
+Program ini menunjukkan penerapan OOP secara lengkap. Class `Buku` digunakan sebagai model data, `Perpustakaan` sebagai pengelola data, dan `Main` sebagai interface pengguna. Hal ini menunjukkan pemisahan tanggung jawab (*separation of concerns*).
+
+---
+
+# **3. Kesimpulan**
+
+Dari praktikum yang telah dilakukan, dapat disimpulkan bahwa konsep OOP sangat penting dalam pengembangan program Java. Dengan menggunakan class dan object, program menjadi lebih terstruktur dan mudah dikembangkan. Konsep seperti encapsulation, penggunaan constructor, serta setter dan getter membantu dalam menjaga keamanan data dan fleksibilitas program.
+
+---
+
+# **5. Referensi**
+
+1. Modul Praktikum Design Pattern Lab 02
+2. Dokumentasi Resmi Java – [https://docs.oracle.com/javase/tutorial/](https://docs.oracle.com/javase/tutorial/)
+
+---
+

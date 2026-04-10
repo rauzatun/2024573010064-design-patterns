@@ -43,7 +43,7 @@ Untuk menjalankan program Java diperlukan **JDK (Java Development Kit)** sebagai
 ### Screenshot Hasil
 
 HelloWorld di sini)*
-![helloworld.png](helloworld.png)
+![helloworld.png](gambar/helloworld.png)
 ---
 
 ### Analisa dan Pembahasan
@@ -71,7 +71,7 @@ Beberapa tipe data dasar pada Java yaitu:
 ### Screenshot Hasil
 
 *(Masukkan screenshot hasil program Variable)*
-![variable.png](variable.png)
+![variable.png](gambar/variable.png)
 ---
 
 ### Analisa dan Pembahasan
@@ -93,7 +93,7 @@ Pada praktikum ini digunakan beberapa tipe data untuk menyimpan nilai yang berbe
 ### Screenshot Hasil
 
 
-![operator.png](operator.png)
+![operator.png](gambar/operator.png)
 ---
 
 ### Analisa dan Pembahasan
@@ -114,7 +114,7 @@ Operator digunakan untuk melakukan operasi terhadap variabel atau nilai. Dalam p
 
 ### Screenshot Hasil
 
-![percabangan.png](percabangan.png)
+![percabangan.png](gambar/percabangan.png)
 ---
 
 ### Analisa dan Pembahasan
@@ -146,7 +146,7 @@ Perulangan digunakan ketika suatu proses harus dilakukan lebih dari satu kali.
 ---
 
 ### Screenshot Hasil
-![perulangan.png](perulangan.png)
+![perulangan.png](gambar/perulangan.png)
 ---
 
 ### Analisa dan Pembahasan
@@ -169,7 +169,7 @@ Program faktorial biasanya dibuat menggunakan perulangan.
 ---
 
 ### Screenshot Hasil
-![factorial.png](factorial.png)
+![factorial.png](gambar/factorial.png)
 
 ---
 
@@ -188,7 +188,7 @@ Bilangan prima adalah bilangan yang hanya memiliki dua faktor yaitu 1 dan bilang
 ---
 
 ### Screenshot Hasil
-![prima.png](prima.png)
+![prima.png](gambar/prima.png)
 ---
 
 ### Analisa dan Pembahasan
@@ -206,7 +206,7 @@ Pola segitiga adalah pola yang dibuat menggunakan karakter tertentu seperti `*` 
 ---
 
 ### Screenshot Hasil
-![segitiga.png](segitiga.png)
+![segitiga.png](gambar/segitiga.png)
 ---
 
 ### Analisa dan Pembahasan
