@@ -1,5 +1,5 @@
 
-# **Laporan Lab 09:
+# **Laporan Lab 09:Strategy Pattern
 **Mata Kuliah:** Praktikum Design Pattern
 **Nama:** Rauzatun Jannah
 **NIM:** 2024573010064
@@ -27,7 +27,7 @@ Sistem navigasi sering kali membutuhkan kalkulasi rute yang berbeda tergantung p
 
 5.Membuat class Main untuk menjalankan simulasi navigasi.
 ### **Screenshoot Hasil**
-
+![praktikum9bagian1.png](gambar/praktikum9bagian1.png)
 ### **Analisa dan Pembahasan**
 Pada praktikum ini, class Navigator bertindak sebagai Context yang tidak memedulikan bagaimana detail dari pencarian rute dilakukan. Ketika pengguna memanggil metode untuk berpindah rute, runtime akan mengeksekusi implementasi konkret dari sub-class strategi yang aktif. Struktur ini membuat aplikasi sangat mudah dikembangkan seandainya di masa mendatang terdapat rute tambahan seperti rute sepeda (CyclingRoute).
 
@@ -47,7 +47,7 @@ Pengolahan citra digital di aplikasi penyunting foto membutuhkan pergantian efek
 
 5.Membuat class Main untuk menguji perubahan filter pada foto secara dinamis.
 ### **Screenshoot Hasil**
-
+![praktikum9bagian2.png](gambar/praktikum9bagian2.png)
 ### **Analisa dan Pembahasan**
 Penerapan Strategy Pattern pada pengeditan foto berhasil menghilangkan ketergantungan langsung antara fungsionalitas UI aplikasi (PhotoEditor) dengan logika matematika pemrosesan gambar. Setiap filter berdiri sendiri, mempermudah pengujian unit (unit testing) untuk masing-masing algoritma filter tanpa perlu mengkhawatirkan state dari komponen editor lainnya.
 
@@ -68,7 +68,7 @@ Sistem aplikasi modern dituntut mampu mengirim pesan melalui berbagai saluran ko
 5.Membuat kelas penguji Main untuk mensimulasikan pengiriman pesan.
 
 ### **Screenshoot Hasil**
-
+![praktikum9bagian3.png](gambar/praktikum9bagian3.png)
 ### **Analisa dan Pembahasan**
 
 Berdasarkan kode di atas, NotificationService dapat memakai strategi pengiriman pesan apa pun selama ia mengimplementasikan NotificationStrategy. Kelebihannya, apabila terjadi penambahan metode komunikasi baru seperti SMSNotification atau WhatsAppNotification, kita cukup membuat kelas baru yang mengimplementasikan interface tersebut tanpa perlu mengutak-atik kode yang ada di dalam kelas NotificationService
@@ -88,6 +88,7 @@ Transaksi checkout pada aplikasi e-commerce menuntut adanya integrasi dengan mul
 
 5.Membuat kelas eksekusi Main untuk menguji skenario pembayaran dengan nilai nominal tertentu.
 ### **Screenshoot Hasil**
+![praktikum9latihan.png](gambar/praktikum9latihan.png)
 
 ### **Analisa dan Pembahasan**
 Sistem berhasil mengisolasi data pembayaran (seperti nomor kartu kredit atau saldo e-wallet) di dalam kelas strateginya masing-masing. Objek Checkout hanya fokus pada proses kalkulasi belanjaan dan mendelegasikan tugas pemotongan saldo sepenuhnya ke objek pembayaran eksternal yang dimasukkan lewat runtime.
