@@ -26,6 +26,8 @@ Rectangle-Square Problem adalah contoh klasik pelanggaran LSP. Secara matematis,
 
 5.Menjalankan program utama menggunakan instansiasi objek Rectangle asli dan objek Square yang disubstitusikan ke dalam tipe Rectangle.
 ### Screenshoot Hasil
+![praktikum6bagian1dengan-lsp.png](gambar/praktikum6bagian1dengan-lsp.png)
+![praktikum6bagian1tanpa-lsp.png](gambar/praktikum6bagian1tanpa-lsp.png)
 
 ### Analisa dan Pembahasan
 ada versi tanpa_lsp, method testRectangle dirancang dengan asumsi kontrak dasar Rectangle: mengubah nilai tinggi tidak akan mempengaruhi lebar. Namun ketika objek diganti menjadi Square, pemanggilan r.setHeight(4) secara tidak sengaja mengubah lebar menjadi 4. Hasil kalkulasi menjadi $4 \times 4 = 16$ (Salah dari sudut pandang kontrak Rectangle). Ini merusak program karena substitusi objek gagal menjaga kestabilan perilaku.Solusi perbaikannya adalah memutus hubungan pewarisan antara Rectangle dan Square. Keduanya dielevasi menjadi sejajar dan mengimplementasikan sebuah interface bernama Shape. Dengan cara ini, polimorfisme tetap berjalan melalui method calculateArea() tanpa ada pihak yang dipaksa mewarisi properti yang tidak sesuai dengan hakikat perilakunya.
@@ -46,6 +48,8 @@ Pelanggaran LSP sering kali terdeteksi apabila sebuah subclass melempar exceptio
 
 5.Membuat kelas pengujian Main dengan metode sharePost(SocialMediaPost post) untuk membuktikan bahwa struktur polimorfisme ini tidak aman dan rentan mengalami crash runtime jika tidak dibungkus dengan penanganan error yang spesifik.
 ### Screenshoot Hasil
+![praktikum6bagian2dengan-lsp.png](gambar/praktikum6bagian2dengan-lsp.png)
+![praktikum6bagian2tanpa-lsp.png](gambar/praktikum6bagian2tanpa-lsp.png)
 
 ### Analisa dan Pembahasan
 Pada desain pertama, sharePost dipaksa menghadapi runtunan penolakan berupa runtime error yang dilempar secara sepihak oleh objek turunan. Proses refactoring menyelamatkan rancangan ini dengan memperkenalkan operasi pemeriksaan kondisi (canPublish() dan getMaxContentLength()) ke dalam kontrak interface Publishable. Kini client code dapat memperlakukan seluruh objek secara seragam tanpa perlu menebak-nebak tipe konkretnya di dalam blok penanganan error.
@@ -68,6 +72,7 @@ Pada kasus latihan ini, terdapat pelanggaran fundamental di mana kelas dasar seb
 
 6.Membuat skenario eksekusi pada class Main dengan mengelompokkan berbagai objek ke dalam koleksi List<Navigable> untuk membuktikan keamanan substitusi objek saat pemanggilan metode navigasi.
 ### Screenshoot Hasil
+![praktikum6latihan.png](gambar/praktikum6latihan.png)
 
 ### Analisa dan Pembahasan
 Awalnya, program latihan melanggar LSP karena objek Bicycle tidak mampu menggantikan fungsi kelas dasar kendaraan tanpa merusak ekspektasi program (memaksa mengeluarkan pesan tidak relevan atau error saat mesin dinyalakan). Melalui refactoring, perilaku navigasi dipisah ke dalam interface fundamental Navigable. Komponen kendaraan bermesin diekstrak ke dalam sub-interface khusus MotorizedVehicle. Hasilnya, Bicycle dibebaskan dari kewajiban memilik mesin, namun ia tetap dapat diproses di dalam sistem navigasi secara polimorfis bersama objek Car.
